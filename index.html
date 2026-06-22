@@ -1,1 +1,42 @@
-Meu projeto
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Pesquisa de Roupas</title>
+</head>
+<body>
+
+    <h1>Pesquisa sobre Roupas</h1>
+    <p>Responda as perguntas abaixo sobre o seu estilo.</p>
+
+    <form>
+        <!-- Campo de Texto Simples -->
+        <p>
+            Qual é o seu nome?<br>
+            <input type="text" name="nome">
+        </p>
+
+        <!-- Opções de escolha única -->
+        <p>
+            Qual tamanho você usa?<br>
+            <input type="radio" name="tamanho" value="P"> P <br>
+            <input type="radio" name="tamanho" value="M"> M <br>
+            <input type="radio" name="tamanho" value="G"> G
+        </p>
+
+        <!-- Opções de marcar quadradinho -->
+        <p>
+            O que você mais gosta de usar? (Pode marcar mais de um)<br>
+            <input type="checkbox" name="gosta" value="camiseta"> Camiseta <br>
+            <input type="checkbox" name="gosta" value="calca"> Calça <br>
+            <input type="checkbox" name="gosta" value="tenis"> Tênis
+        </p>
+
+        <!-- Botão simples de enviar -->
+        <p>
+            <button type="submit">Enviar Dados</button>
+        </p>
+    </form>
+
+</body>
+</html>
