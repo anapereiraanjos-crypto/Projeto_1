@@ -6,195 +6,70 @@
     </title>
     Por: Ana lusa Pereira, 1B 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pink & Purple - Moda & Estilo</title>
+  <title>Minha Loja de Roupas</title>
   <style>
-    /* Configurações Globais */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
+    /* Estilos da página */
     body {
-      background-color: #fcf4f8;
-      color: #4a154b;
-    }
-
-    /* Cabeçalho */
-    header {
-      background: linear-gradient(135deg, #8e24aa, #e91e63);
-      color: white;
+      background-color: #ffe6f2; /* Fundo rosa bem clarinho */
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 2rem 1rem;
+      margin: 0;
+      padding: 20px;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    /* Título principal */
+    h1 {
+      color: #800080; /* Roxo */
     }
 
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+    /* Subtítulos */
+    h2 {
+      color: #ff1493; /* Rosa choque */
     }
 
-    /* Navegação */
-    nav {
-      background-color: #4a154b;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
-    }
-
-    nav a {
-      color: #f48fb1;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffffff;
-    }
-
-    /* Conteúdo Principal */
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #6a1b9a;
-      margin-bottom: 20px;
-    }
-
-    /* Vitrine de Roupas (Cards) */
-    .grid-roupas {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
+    /* Caixa do produto */
+    .produto {
       background-color: white;
-      border-radius: 12px;
-      border: 2px solid #f48fb1;
+      border: 2px solid #800080; /* Borda roxa */
+      border-radius: 10px;
+      width: 200px;
       padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
+      margin: 10px auto; /* Centraliza a caixa na tela */
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-img {
-      width: 100%;
-      height: 180px;
-      background-color: #fce4ec;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #8e24aa;
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: #6a1b9a;
-      margin-bottom: 8px;
-    }
-
-    .preco {
-      color: #e91e63;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-    }
-
-    .btn-comprar {
-      background-color: #e91e63;
+    /* Botão */
+    button {
+      background-color: #ff1493;
       color: white;
       border: none;
-      padding: 10px 15px;
-      border-radius: 20px;
+      padding: 8px 15px;
+      border-radius: 5px;
       cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
     }
 
-    .btn-comprar:hover {
-      background-color: #8e24aa;
-    }
-
-    /* Rodapé */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #2e003e;
-      color: #f48fb1;
-      margin-top: 40px;
+    button:hover {
+      background-color: #800080; /* Muda para roxo ao passar o mouse */
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Pink & Purple Shop</h1>
-    <p>Sua loja favorita de roupas cheias de estilo!</p>
-  </header>
+  <h1>Loja Rosa & Roxo</h1>
+  <p>Bem-vindo à minha coleção!</p>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Novidades</a>
-    <a href="#">Coleção</a>
-    <a href="#">Contato</a>
-  </nav>
+  <h2>Produtos em Destaque</h2>
 
-  <div class="container">
-    <h2 class="section-title">Destaques da Coleção</h2>
-    
-    <div class="grid-roupas">
-      <div class="card">
-        <div class="card-img">👗</div>
-        <h3>Vestido Roxo</h3>
-        <p class="preco">R$ 129,90</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-
-      <div class="card">
-        <div class="card-img">👚</div>
-        <h3>Blusa Rosa Neon</h3>
-        <p class="preco">R$ 69,90</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-
-      <div class="card">
-        <div class="card-img">🧥</div>
-        <h3>Casaco Lilás</h3>
-        <p class="preco">R$ 189,90</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-
-      <div class="card">
-        <div class="card-img">👖</div>
-        <h3>Calça Pink</h3>
-        <p class="preco">R$ 119,90</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-    </div>
+  <div class="produto">
+    <h3>👗 Vestido Roxo</h3>
+    <p>Preço: R$ 50,00</p>
+    <button>Comprar</button>
   </div>
 
-  <footer>
-    <p>&copy; 2026 Pink & Purple Shop - Todos os direitos reservados.</p>
-  </footer>
+  <div class="produto">
+    <h3>👚 Camiseta Rosa</h3>
+    <p>Preço: R$ 30,00</p>
+    <button>Comprar</button>
+  </div>
 
 </body>
 </html>
