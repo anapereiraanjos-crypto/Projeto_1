@@ -3,328 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Pesquisa de marcas
-    </title>
-    Por: Ana lusa Pereira, 1B 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandora - Conceito e Inovação</title>
-    <style>
-        /* RESET E CONFIGURAÇÕES GERAIS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <title>Minhas Roupas Favoritas</title>
+  <style>
+    /* Estilos do corpo da página */
+    body {
+      background-color: #f3e5f5; /* Fundo roxo bem claro */
+      color: #4a148c;            /* Texto roxo escuro */
+      font-family: sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
 
-        body {
-            background-color: #ffffff;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
+    /* Título Principal */
+    h1 {
+      color: #d81b60; /* Rosa escuro */
+    }
 
-        /* NAVBAR (FUNDO BRANCO PURÍSSIMO) */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            border-bottom: 1px solid #f2f2f2;
-            z-index: 1000;
-        }
+    /* Tamanho fixo para todas as fotos */
+    img {
+      width: 200px;
+      height: 250px;
+      border-radius: 15px;      /* Borda arredondada nas fotos */
+      border: 3px solid #d81b60; /* Moldura rosa na foto */
+    }
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #666;
-            margin-left: 25px;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #000000;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            padding-top: 140px;
-            padding-bottom: 80px;
-            text-align: center;
-            background-color: #fafafa;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        /* GALERIA DE IMAGENS */
-        .section-title {
-            text-align: center;
-            margin: 60px 0 30px 0;
-            font-size: 28px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .gallery-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
-        }
-
-        .gallery-item {
-            background-color: #ffffff;
-            border: 1px solid #eaeaea;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            filter: grayscale(20%);
-            display: block;
-        }
-
-        .gallery-info {
-            padding: 20px;
-            background: #ffffff;
-        }
-
-        .gallery-info h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-
-        /* SEÇÃO DE OPINIÕES / DEPOIMENTOS */
-        .opinions-section {
-            background-color: #fafafa;
-            padding: 80px 0;
-            margin-top: 60px;
-        }
-
-        .opinions-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 0 20px;
-        }
-
-        .opinion-card {
-            background-color: #ffffff;
-            padding: 30px;
-            border: 1px solid #eaeaea;
-            border-radius: 4px;
-            position: relative;
-        }
-
-        .opinion-text {
-            font-style: italic;
-            color: #444;
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-        }
-
-        .user-info .avatar {
-            width: 40px;
-            height: 40px;
-            background-color: #eaeaea;
-            border-radius: 50%;
-            margin-right: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .user-detail h4 {
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .user-detail span {
-            font-size: 12px;
-            color: #999;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #ffffff;
-            border-top: 1px solid #f2f2f2;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 13px;
-            color: #888;
-            letter-spacing: 1px;
-        }
-
-        /* RESPONSIVIDADE */
-        @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; }
-            .hero h1 { font-size: 32px; }
-            .gallery-container { grid-template-columns: 1fr; }
-        }
-    </style>
+    /* Espaçamento entre os itens */
+    .item {
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <header>
-        <div class="nav-container">
-            <div class="logo">Bandora</div>
-            <nav class="nav-links">
-                <a href="#home">Início</a>
-                <a href="#galeria">Coleção</a>
-                <a href="#opinioes">Opiniões</a>
-            </nav>
-        </div>
-    </header>
+  <h1>Galeria de Roupas Rosa e Roxo</h1>
+  <p>Algumas peças do meu estilo favorito:</p>
 
-    <!-- SESSÃO PRINCIPAL (HERO) -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Minimalismo Essencial</h1>
-            <p>A Bandora redefine o conceito de sofisticação com criações exclusivas, aliando pureza visual, formas contemporâneas e uma identidade feita para se destacar no sutil.</p>
-        </div>
-    </section>
+  <div class="item">
+    <h2>Casaco Rosa</h2>
+    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=400" alt="Casaco Rosa">
+  </div>
 
-    <!-- VITRINE / GALERIA DE PRODUTOS -->
-    <h2 class="section-title" id="galeria">O Conceito Visual</h2>
-    <section class="gallery-container">
-        
-        <div class="gallery-item">
-            <!-- Imagem de Exemplo (Substitua pelo link real se desejar) -->
-            <img src="https://unsplash.com" alt="Bandora Design Linha 01">
-            <div class="gallery-info">
-                <h3>Design Estruturado Edição I</h3>
-                <p>Estética clean focada no caimento e na fluidez das linhas brancas puras.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://unsplash.com" alt="Bandora Design Linha 02">
-            <div class="gallery-info">
-                <h3>Equilíbrio & Textura</h3>
-                <p>Materiais premium selecionados para gerar contraste em ambientes minimalistas.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://unsplash.com" alt="Bandora Design Linha 03">
-            <div class="gallery-info">
-                <h3>Essência Atemporal</h3>
-                <p>Peças pensadas para transcender temporadas com elegância constante.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- SEÇÃO DE OPINIÕES -->
-    <section class="opinions-section" id="opinioes">
-        <h2 class="section-title">O que dizem sobre a Marca</h2>
-        
-        <div class="opinions-container">
-            
-            <!-- Opinião 1 -->
-            <div class="opinion-card">
-                <p class="opinion-text">"A proposta monocromática da Bandora me conquistou de primeira. O cuidado com o acabamento e a simplicidade das peças trazem uma sofisticação rara hoje em dia."</p>
-                <div class="user-info">
-                    <div class="avatar">MA</div>
-                    <div class="user-detail">
-                        <h4>Mariana Alencar</h4>
-                        <span>Designer de Interiores</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Opinião 2 -->
-            <div class="opinion-card">
-                <p class="opinion-text">"Procurava peças que traduzissem um estilo moderno sem exageros. O projeto visual da marca focado na cor branca é impecável e minimalista."</p>
-                <div class="user-info">
-                    <div class="avatar">GC</div>
-                    <div class="user-detail">
-                        <h4>Gabriel Costa</h4>
-                        <span>Diretor de Arte</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Opinião 3 -->
-            <div class="opinion-card">
-                <p class="opinion-text">"Excelente experiência. Desde a apresentação visual do site até a entrega dos produtos. A Bandora prova que menos é, de fato, muito mais."</p>
-                <div class="user-info">
-                    <div class="avatar">LB</div>
-                    <div class="user-detail">
-                        <h4>Luísa Borges</h4>
-                        <span>Consultora de Estilo</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 BANDORA BRAND. TODOS OS DIREITOS RESERVADOS.</p>
-    </footer>
+  <div class="item">
+    <h2>Vestido Roxo</h2>
+    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400" alt="Vestido Roxo">
+  </div>
 
 </body>
 </html>
