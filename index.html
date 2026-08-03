@@ -5,70 +5,53 @@
     <title>Minha Pesquisa de Roupas
     </title>
     Por: Ana lusa Pereira, 1B 
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
-  <title>Minha Loja de Roupas</title>
+  <title>Minhas Roupas Favoritas</title>
   <style>
-    /* Estilos da página */
+    /* Estilos do corpo da página */
     body {
-      background-color: #ffe6f2; /* Fundo rosa bem clarinho */
-      font-family: Arial, sans-serif;
+      background-color: #f3e5f5; /* Fundo roxo bem claro */
+      color: #4a148c;            /* Texto roxo escuro */
+      font-family: sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 20px;
+      margin: 20px;
     }
 
-    /* Título principal */
+    /* Título Principal */
     h1 {
-      color: #800080; /* Roxo */
+      color: #d81b60; /* Rosa escuro */
     }
 
-    /* Subtítulos */
-    h2 {
-      color: #ff1493; /* Rosa choque */
-    }
-
-    /* Caixa do produto */
-    .produto {
-      background-color: white;
-      border: 2px solid #800080; /* Borda roxa */
-      border-radius: 10px;
+    /* Tamanho fixo para todas as fotos */
+    img {
       width: 200px;
-      padding: 15px;
-      margin: 10px auto; /* Centraliza a caixa na tela */
+      height: 250px;
+      border-radius: 15px;      /* Borda arredondada nas fotos */
+      border: 3px solid #d81b60; /* Moldura rosa na foto */
     }
 
-    /* Botão */
-    button {
-      background-color: #ff1493;
-      color: white;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #800080; /* Muda para roxo ao passar o mouse */
+    /* Espaçamento entre os itens */
+    .item {
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Loja Rosa & Roxo</h1>
-  <p>Bem-vindo à minha coleção!</p>
+  <h1>Galeria de Roupas Rosa e Roxo</h1>
+  <p>Algumas peças do meu estilo favorito:</p>
 
-  <h2>Produtos em Destaque</h2>
-
-  <div class="produto">
-    <h3>👗 Vestido Roxo</h3>
-    <p>Preço: R$ 50,00</p>
-    <button>Comprar</button>
+  <div class="item">
+    <h2>Casaco Rosa</h2>
+    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=400" alt="Casaco Rosa">
   </div>
 
-  <div class="produto">
-    <h3>👚 Camiseta Rosa</h3>
-    <p>Preço: R$ 30,00</p>
-    <button>Comprar</button>
+  <div class="item">
+    <h2>Vestido Roxo</h2>
+    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400" alt="Vestido Roxo">
   </div>
 
 </body>
